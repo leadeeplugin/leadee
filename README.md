@@ -1,8 +1,11 @@
-# Leadee - Leads Analytics and Message Storage Plugin
+# Leadee - WordPress Leads Analytics and Message Storage Plugin
 
-[![Leadee Plugin](https://leadee.io/wp-content/uploads/for_githab/leadee_logo.png)](https://leadee.io?utm_source=referral&utm_medium=github&utm_content=header_link)
+[![Leadee Plugin](https://leadee.io/wp-content/uploads/for_github/leadee_logo.png)](https://leadee.io?utm_source=referral&utm_medium=github&utm_content=header_link)
 
 [Official site LEADEE.IO](https://leadee.io?utm_source=referral&utm_medium=github&utm_content=header_link)
+
+
+[![Leadee Plugin](https://leadee.io/wp-content/uploads/for_github/leadee_plugin.png)](https://leadee.io?utm_source=referral&utm_medium=github&utm_content=header_link)
 
 ## Description
 
@@ -25,7 +28,7 @@ No complex setup is required for the initial configuration of the plugin.
 
 ## Help us grow
 
-[![Leadee Plugin](https://leadee.io/wp-content/uploads/for_githab/leadee_kofi_donate.png)](https://donate.leadee.io)
+[![Leadee Plugin](https://leadee.io/wp-content/uploads/for_github/leadee_kofi_donate.png)](https://donate.leadee.io)
 
 ## Support
 
