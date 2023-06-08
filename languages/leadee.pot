@@ -1,0 +1,263 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Leadee\n"
+"Report-Msgid-Bugs-To: https://leadee.io/\n"
+"POT-Creation-Date: 2021-03-11 09:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: leadee <info@leadee.io>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: core/partials/header.php
+msgid "Donate us"
+msgstr ""
+
+msgid "Export"
+msgstr ""
+
+msgid "Excel table"
+msgstr ""
+
+msgid "CSV table"
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "Leads"
+msgstr ""
+
+msgid "Goals"
+msgstr ""
+
+msgid "Plugin settings"
+msgstr ""
+
+msgid "Leads table settings"
+msgstr ""
+
+msgid "Goals settings"
+msgstr ""
+
+msgid "Support & Faq"
+msgstr ""
+
+msgid "Leadee news"
+msgstr ""
+
+#: core/pages/dashboard.php
+
+msgid "Leads statistics"
+msgstr ""
+
+msgid "Average count of leads"
+msgstr ""
+
+msgid "Last leads"
+msgstr ""
+
+msgid "Goals of leads"
+msgstr ""
+
+msgid "of goal achievement per current month"
+msgstr ""
+
+msgid "Goal amount"
+msgstr ""
+
+msgid "Leads month sum"
+msgstr ""
+
+
+msgid "Goal not set!"
+msgstr ""
+
+msgid "Set goal"
+msgstr ""
+
+msgid "Today"
+msgstr ""
+
+msgid "Yesterday"
+msgstr ""
+
+msgid "Week"
+msgstr ""
+
+msgid "Leads sources"
+msgstr ""
+
+msgid "Where do leads come from"
+msgstr ""
+
+msgid "Search engines"
+msgstr ""
+
+msgid "Google, Bing, Yandex, etc"
+msgstr ""
+
+msgid "Advertising systems"
+msgstr ""
+
+msgid "Google Ads, FB Ads, etc"
+msgstr ""
+
+msgid "Social networks"
+msgstr ""
+
+msgid "Facebook, Instagram, VK, etc"
+msgstr ""
+
+msgid "Referral traffic"
+msgstr ""
+
+msgid "Websites, forums, blogs, etc."
+msgstr ""
+
+msgid "Direct traffic"
+msgstr ""
+
+msgid "From those who entered the site address"
+msgstr ""
+
+msgid "Popular screen sizes top 5"
+msgstr ""
+
+msgid "With these screen sizes, requests are left most often. Top 5"
+msgstr ""
+
+msgid "OS clients"
+msgstr ""
+
+msgid "Operating systems. Top 5"
+msgstr ""
+
+msgid "Popular Pages"
+msgstr ""
+
+msgid "This is popular pages of clients leads. Top 5"
+msgstr ""
+
+#: core/pages/goals.php
+
+msgid "Goals Statistics"
+msgstr ""
+
+msgid "Average count of goals"
+msgstr ""
+
+msgid "Conversion goals"
+msgstr ""
+
+msgid "How close to the target <strong>for the current month</strong>"
+msgstr ""
+
+msgid "Your goal"
+msgstr ""
+
+msgid "Goal = useful action on the site (enter message in form, etc.)."
+msgstr ""
+
+msgid "All goals are summarized in quantitative and monetary terms."
+msgstr ""
+
+msgid "Set goal"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Count"
+msgstr ""
+
+msgid "Sum"
+msgstr ""
+
+#: core/pages/goals-settings.php
+
+msgid "Goal sum setting for forms"
+msgstr ""
+
+msgid "The table reflects the cost of the goals that will come from contact forms"
+msgstr ""
+
+msgid "Save data"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Enter goal amount"
+msgstr ""
+
+msgid "How much do you want leads and conversions that which users will for 1 month?"
+msgstr ""
+
+msgid "Enter amount in $"
+msgstr ""
+
+msgid "Save data"
+msgstr ""
+
+msgid "Goal = useful action on the site (enter message in form, etc.)."
+msgstr ""
+
+msgid "All goals are summarized in quantitative and monetary terms."
+msgstr ""
+
+#: core/pages/leads.php
+
+msgid "Date"
+msgstr ""
+
+msgid "Form fields"
+msgstr ""
+
+msgid "Source type"
+msgstr ""
+
+msgid "Device type"
+msgstr ""
+
+msgid "Page"
+msgstr ""
+
+msgid "Device OS"
+msgstr ""
+
+msgid "Form type"
+msgstr ""
+
+msgid "Form"
+msgstr ""
+
+msgid "Source"
+msgstr ""
+
+msgid "First visit params"
+msgstr ""
+
+msgid "Browser"
+msgstr ""
+
+msgid "Screen"
+msgstr ""
+
+msgid "Cost"
+msgstr ""
+
+#: core/pages/leads-table-settings.php
+
+msgid "Column settings"
+msgstr ""
+
+msgid "For leads"
+msgstr ""

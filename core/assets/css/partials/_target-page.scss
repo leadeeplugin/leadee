@@ -1,0 +1,12 @@
+/* ==========================================================================
+   Target page
+   ========================================================================== */
+#table-leads-target {
+  .dataTables_filter, .dataTables_length {
+    display: none;
+  }
+}
+
+.status-input-holder{
+  display: flex;
+}

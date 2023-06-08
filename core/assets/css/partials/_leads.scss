@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Leads page
+   ========================================================================== */
+$table-bg-color: #F4F7F2;
+$text-color: #635F6F;
+$link-color: #8AC44B;
+$even-line-color: #000;
+$button-bg-color: #8AC44B;
+
+.table.leads-table {
+  thead {
+    tr {
+      background-color: $table-bg-color;
+    }
+  }
+}
+
+.dataTables_wrapper {
+  color: $text-color;
+  background-color: #fff;
+
+  a {
+    color: $link-color;
+  }
+
+  .even {
+    &:after {
+      content: "";
+      border-bottom: 1px solid $even-line-color;
+    }
+  }
+}
+
+.table-leads {
+  margin: 20px 0 !important;
+  padding: 0 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  background: $button-bg-color !important;
+  border: none;
+  color: #fff !important;
+  border-radius: 40px;
+}
+
+#datatable-buttons_filter > label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 15px 20px 0 16px;
+}
+
+#datatable-buttons {
+  width: 100% !important;
+  display: block;
+}
+
+.item-inner.inner-center {
+  display: flex;
+  align-items: center;
+}
+
+#leads-list_length {
+  display: none;
+}
+
+.reset-filter-button {
+  background: none;
+  border: none;
+  padding: 8px 0 5px 5px;
+}
+
+.leads-table-filter {
+  max-width: 40%;
+  position: relative;
+  top: 22px;
+  left: 10px;
+  z-index: 1;
+
+  .item-input-wrap.input-dropdown-wrap {
+    display: flex;
+  }
+
+  .item-title {
+    padding-right: 15px;
+  }
+
+  > div {
+    padding-left: 20px;
+  }
+}
+
+table.dataTable tbody td, table.dataTable tbody th {
+  height: 50px;
+}
+
+.fields-data {
+  padding: 15px 0 15px 0px;
+}

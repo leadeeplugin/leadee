@@ -1,0 +1,360 @@
+/* ==========================================================================
+   Setting page
+   ========================================================================== */
+td {
+  &.with-copy {
+    &::after {
+      content: "";
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.375 1.875H5.625C4.24429 1.875 3.125 2.99429 3.125 4.375V9.375' stroke='%23635F6F'/%3e%3cpath d='M5.5 7.1875C5.5 6.44288 5.50074 5.92626 5.54529 5.53116C5.58869 5.14614 5.66833 4.93888 5.78414 4.78795C5.85729 4.69262 5.94262 4.60729 6.03795 4.53414C6.18888 4.41833 6.39614 4.33869 6.78116 4.29529C7.17626 4.25074 7.69288 4.25 8.4375 4.25C9.18212 4.25 9.69874 4.25074 10.0938 4.29529C10.4789 4.33869 10.6861 4.41833 10.837 4.53414C10.9324 4.60729 11.0177 4.69262 11.0909 4.78795L11.4875 4.48357L11.0909 4.78795C11.2067 4.93888 11.2863 5.14614 11.3297 5.53116C11.3743 5.92626 11.375 6.44288 11.375 7.1875V9.6875C11.375 10.4321 11.3743 10.9487 11.3297 11.3438C11.2863 11.7289 11.2067 11.9361 11.0909 12.087C11.0177 12.1824 10.9324 12.2677 10.837 12.3409C10.6861 12.4567 10.4789 12.5363 10.0938 12.5797C9.69874 12.6243 9.18212 12.625 8.4375 12.625C7.69288 12.625 7.17626 12.6243 6.78116 12.5797C6.39614 12.5363 6.18888 12.4567 6.03795 12.3409C5.94262 12.2677 5.85729 12.1824 5.78414 12.087C5.66833 11.9361 5.58869 11.7289 5.54529 11.3438C5.50074 10.9487 5.5 10.4321 5.5 9.6875V7.1875Z' stroke='%23635F6F'/%3e%3c/svg%3e ");
+      display: block;
+      width: 15px;
+      height: 15px;
+      float: right;
+      margin-top: 4px;
+    }
+
+    & {
+      max-width: 130px;
+    }
+  }
+}
+
+.data-table {
+  td.numeric-cell,
+  th.numeric-cell {
+    text-align: left;
+    padding-left: 26px;
+  }
+
+  &.data-table-links {
+    .button {
+      min-width: 140px;
+    }
+  }
+
+  &.footer-place {
+    margin-top: 15px;
+  }
+}
+
+.donate-modal {
+  a {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  ul li {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+.style-table-1 {
+  thead {
+    tr {
+      background-color: #635F6F;
+      th {
+        color: #ffffff !important;
+      }
+    }
+
+    .icon-checkbox {
+      background-color: #fff;
+      border-color: #fff;
+    }
+  }
+
+  tr {
+    background-color: #c4c4c421;
+
+    th {
+      font-size: 14px;
+      height: 30px;
+    }
+  }
+
+  .icon-checkbox {
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+  .checkbox i:after,
+  .icon-checkbox:after {
+    background-color: #fff;
+    color: #F04438;
+  }
+}
+
+.dialog-textarea {
+  margin-top: 15px;
+  height: 300px;
+}
+
+/**
+ * target-settings block
+ */
+
+.header-target {
+  align-items: center;
+  background-color: #c4c4c412;
+  border-radius: 8px;
+  padding: 15px 15px 15px 0px;
+}
+
+.settings-save-block {
+  .inline-input input {
+    margin-left: 10px;
+    border: solid 1px #DFE2E9;
+    border-radius: 8px;
+    padding: 4px 4px 4px 10px;
+    max-width: 100px;
+  }
+
+  .badge {
+    padding: 10px;
+  }
+}
+
+table {
+  & {
+    margin-top: 20px !important;
+  }
+
+  tbody {
+    tr {
+      padding: 0;
+    }
+  }
+
+  thead {
+    th {
+      font-size: 15px;
+      padding: 0;
+    }
+  }
+
+  .icon-column {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .checkbox i,
+  .icon-checkbox {
+    border: var(--f7-checkbox-border-width) solid #ffffff;
+    background-color: #fff;
+  }
+}
+
+.settings-save-block table,
+#form-shortcode-table table {
+  tbody {
+    tr {
+      background-color: #f6f6f6;
+    }
+  }
+
+  thead {
+    background-color: #635F6F;
+
+    th {
+      color: #fff !important;
+    }
+  }
+}
+
+.target-form {
+  margin-top: 30px;
+
+  ul {
+    li {
+      background-color: #c4c4c412;
+      border-radius: 8px;
+      padding: 20px 20px 20px 0px;
+    }
+  }
+
+  .content-center {
+    align-items: center;
+  }
+}
+
+.child-block-right {
+  display: flex;
+
+  & > div {
+    margin-left: auto;
+  }
+}
+
+.settings-save-block {
+  .checkbox i:after,
+  .icon-checkbox:after {
+    background-color: #fff;
+    color: #8ac44c;
+  }
+
+  ul {
+    li {
+      background-color: #f6f6f6;
+      margin-bottom: 12px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.item-title.header-title {
+  color: #000;
+  font-weight: 500;
+}
+
+.item-checkbox.item-content {
+  padding: 0;
+  margin: 0;
+}
+
+.target-small-info {
+  .target-small-child {
+    & {
+      margin-bottom: 5px;
+      display: flex;
+    }
+  }
+
+  & {
+    font-size: 11px;
+    margin: 30px 0px 0px 0px;
+  }
+
+  .target-small-child i {
+    width: 31px;
+  }
+
+  span {
+
+  }
+}
+
+.target-medium-info {
+  margin: 10px 0 10px 0px;
+}
+
+.item-target-form {
+  & {
+    max-width: 80%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .area-input {
+    padding: 10px;
+    max-width: 130px;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+  }
+
+  button {
+    margin-left: 10px;
+  }
+}
+
+.item-checkbox {
+  max-width: 60px;
+}
+
+.data-table thead td,
+.data-table thead th {
+  height: 30px;
+}
+
+.dark-table {
+  .even,
+  .odd {
+    background-color: #f6f6f6 !important;
+  }
+
+  .group {
+    background-color: #e0e0e0 !important;
+  }
+
+  i {
+    display: block !important;
+    margin: 0 auto;
+  }
+}
+
+.setting-columns {
+  padding-bottom: 20px;
+
+  thead {
+    label {
+      position: relative;
+      bottom: 40px;
+    }
+  }
+}
+
+#leads-list-target-settings_length,
+#leads-list-target-settings_filter {
+  display: none;
+}
+
+.data-table tbody td:before,
+.data-table tbody th:before {
+  content: none;
+}
+
+.settings-save-block {
+  table.dataTable thead .sorting_asc:after {
+    content: none;
+  }
+
+  table.dataTable thead .sorting:after {
+    content: none;
+  }
+}
+
+.leads-table-setting {
+  tbody {
+    font-size: 12px;
+  }
+}
+
+.goals-setting-table {
+  padding: 15px 15px 15px 3px !important;
+}
+
+.stepper-input-wrap,
+.stepper-value {
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.stepper-button,
+.stepper-button-minus,
+.stepper-button-plus {
+  background-color: #f6f6f6;
+  border: none;
+}
+
+.stepper-button-minus:after,
+.stepper-button-minus:before,
+.stepper-button-plus:after,
+.stepper-button-plus:before {
+  background-color: #acacac;
+}
+
+.stepper .stepper-input-wrap input {
+  color: #6a6a6a;
+  height: 18px;
+  background-color: white;
+  border-radius: 5px;
+  width: 65px;
+  font-size: 15px;
+}
+
+#target-month-sum-save-button{
+  margin: 10px 0px 0px 0px;
+}

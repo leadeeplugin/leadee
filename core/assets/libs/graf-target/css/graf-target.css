@@ -1,0 +1,139 @@
+#progress-bar {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  padding: 10px 0px 10px 0px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.smile-chart-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bar {
+  position: relative;
+  display: block;
+  width: 420px;
+}
+
+#bar svg {
+  margin-top: 10%;
+  width: 270px;
+  height: 160px;
+}
+
+#bar svg path {
+  fill: transparent;
+  stroke-width: 20px;
+}
+
+#bar svg path#indicator-line {
+  stroke: #E65425;
+  transition: stroke-dashoffset 1s;
+  stroke-dasharray: 347;
+  stroke-dashoffset: 347;
+}
+
+#main-info {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin:auto;
+    padding:25px;
+    max-width:50px;
+    max-height:50px;
+    border:none;
+    border-radius:100%;
+    background-color:rgba(196, 196, 196, 0.1);
+  }
+  #emotion {
+    background: #E5F3D6;
+    max-width: 55px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 100%;
+  }
+  
+  #target-progress-text-block{
+    margin:auto;
+  }
+  #target-progress-num {
+    display: flex;
+    justify-content: center;
+    transition: color 1s;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 49px;
+    color: #E65425;
+  }
+  #target-progress-text{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #635F6F;
+  }
+  .target-progress-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #635F6F;
+    
+  }
+  .percent{
+    position:absolute;
+    bottom:0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  #current-percent{
+    left: 10px
+  }
+
+#hundrend-percent {
+  right: 10px;
+}
+
+.circle {
+  r: 2px;
+  transition: fill 1s;
+}
+
+
+@media (min-width: 1800px) {
+  #bar svg {
+    margin-top: 0;
+    width: 550px;
+    height: 280px;
+  }
+
+  #bar svg path {
+    fill: transparent;
+    stroke-width: 29;
+  }
+
+  #emotion {
+    max-width: 70px;
+    margin-bottom: 40px;
+  }
+}

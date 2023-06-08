@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+  margin-bottom: 200px;
+  margin-top: 50vh;
+  position: relative;
+  bottom: 15px;
+
+  a, a:hover {
+    color: #8ac44c;
+  }
+
+  .card {
+    background: none;
+  }
+
+  .copy {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+    .copy-text {
+      width: 50%;
+
+      span {
+        margin-left: 5px;
+
+        b {
+          color: #8AC44B;
+        }
+
+        .b-date {
+          color: #FBC343;
+        }
+      }
+    }
+
+    .copy-addon-text {
+      margin-right: 30px;
+      width: 50%;
+      text-align: right;
+    }
+  }
+}
+
+.notification.modal-in {
+  z-index: 99999;
+  position: fixed;
+  top: 40px;
+}
+
+/*tour*/
+
+.driver-close-btn {
+  width: 33.3333%;
+  border: 3px solid #fff !important;
+}
+
+.driver-btn-group.driver-navigation-btns {
+  width: 66.6666%;
+  display: flex;
+
+  .driver-prev-btn,
+  .driver-next-btn {
+    display: inline-block !important;
+    background-color: #f8cb35 !important;
+    color: #fff !important;
+    outline: none !important;
+    text-shadow: none !important;
+    border: 3px solid #fff !important;
+    font-family: "Montserrat", sans-serif !important;
+  }
+
+  .driver-next-btn {
+    background-color: #8AC44B !important;
+  }
+}
+
+div#driver-popover-item {
+  max-width: 400px !important;
+}
+
+div#driver-popover-item .driver-popover-footer button {
+  padding: 5px 0px !important;
+  border-radius: 16px !important;
+  font-size: 16px !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.driver-popover-title {
+  line-height: 1.4 !important;
+}
+
+.driver-popover-title,
+.driver-popover-description {
+  font-family: "Montserrat", sans-serif !important;
+  margin: 20px 0px;
+  text-transform: uppercase !important;
+}
+
+.driver-popover-description {
+  line-height: 1.8 !important;
+}

@@ -1,0 +1,20 @@
+.hidden-mobile{
+  display: none;
+}
+@media(min-width: 768px) and (max-width: 1200px) {
+  .hidden-mobile{
+    display: block;
+  }
+  .hidden-md{
+    display: none;
+  }
+}
+
+@media(min-width: 1201px) {
+  .hidden-mobile{
+    display: block;
+  }
+  .hidden-lg{
+    display: none;
+  }
+}
