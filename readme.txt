@@ -1,5 +1,6 @@
 === Leadee - Leads Analytics and Message Storage Plugin ===
-Contributors: leadee
+Contributors: leadeeplugin
+Stable tag: 0.5.0
 Site: https://leadee.io
 Donate link: https://donate.leadee.io
 Tags: analytics, leads, message storage, WordPress analytics, analytics dashboard, marketing, statistics, tracking, stats, contact form, contact form 7, ninja forms, wpforms
