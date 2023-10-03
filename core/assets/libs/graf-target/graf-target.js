@@ -1,6 +1,6 @@
 var indicatorLine = document.getElementById("indicator-line");
 var mainLine = document.getElementById("main-line");
-var image = document.getElementById("emotion");
+var image = document.getElementById("leadee-graf-emotion");
 var num = document.getElementById("target-progress-num");
 var smallIndicatorLine = "M 20 250 C 35 25 375 25 390 250";
 var verySmallIndicatorLine = "M 20 120 C 30 -22 240 -22 250 120";
@@ -79,14 +79,14 @@ function changeProgress(percent) {
     const moveNum = length * ((100 - percent) / 100);
 
     if (percent <= 33) {
-        emotion.src = dataOut.assetsPath + "/libs/graf-target/img/first.png";
+        image.src = dataOut.assetsPath + "/libs/graf-target/img/first.png";
         indicColor = "#E65425";
 
     } else if (percent > 33 && percent <= 66) {
-        emotion.src = dataOut.assetsPath + "/libs/graf-target/img/second.png";
+        image.src = dataOut.assetsPath + "/libs/graf-target/img/second.png";
         indicColor = " #FBC343";
     } else if (percent > 66 && percent <= 100) {
-        emotion.src = dataOut.assetsPath + "/libs/graf-target/img/third.png";
+        image.src = dataOut.assetsPath + "/libs/graf-target/img/third.png";
         indicColor = "#8AC44B";
     }
 

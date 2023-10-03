@@ -41,7 +41,7 @@ report or a feature request on our GitHub repository.
 
 ## Warning
 
-This is a beta version of the plugin, and we are continuously improving it every day. However, the plugin may contain some errors that we may not be aware of. If you discover any errors, please report them to github issues.
+If you discover any errors, please report them to github issues.
 ## License
 
 Leadee is released under the GPL v3 license. You can find the full license text [here](https://www.gnu.org/licenses/gpl-3.0.html).

@@ -61,7 +61,7 @@
     border-radius:100%;
     background-color:rgba(196, 196, 196, 0.1);
   }
-  #emotion {
+  #leadee-graf-emotion{
     background: #E5F3D6;
     max-width: 55px;
     padding: 10px;
@@ -132,7 +132,7 @@
     stroke-width: 29;
   }
 
-  #emotion {
+  #leadee-graf-emotion {
     max-width: 70px;
     margin-bottom: 40px;
   }

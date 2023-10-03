@@ -1,24 +1,37 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 
-class FormDriverFactory
-{
-    public static function create()
-    {
-        if (isset($_POST)) {
-            $action = isset($_POST['action']) ? wp_unslash($_POST['action']) : '';
-            $requested_with = isset($_SERVER['HTTP_X_REQUESTED_WITH']) ? strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) : '';
+/**
+ * Class FormDriverFactory
+ *
+ * This class is responsible for creating the appropriate FormDriver based on the incoming data.
+ */
+class LEADEE_FormDriverFactory {
 
-            switch (true) {
-                case (isset($action) && strpos($action, 'nf_ajax_submit') !== false) || (isset($_POST['ninja']) && $requested_with !== 'xmlhttprequest'):
-                    return new NinjaDriver();
-                case (isset($action) && strpos($action, '_wpcf7') !== false) || (isset($_POST['_wpcf7']) && $requested_with !== 'xmlhttprequest'):
-                    return new ContactForm7Driver();
-                case (isset($action) && strpos($action, 'wpforms') !== false) || (isset($_POST['wpforms']) && $requested_with !== 'xmlhttprequest'):
-                    return new WpFormsDriver();
-                default:
-                    return null;
-            }
-        }
-        return null;
-    }
+	/**
+	 * Create an instance of the appropriate FormDriver based on the incoming data.
+	 *
+	 * @return LEADEE_FormDriver|null An instance of the FormDriver interface or null if no suitable driver is found.
+	 */
+	public static function create() {
+		if ( isset( $_SERVER['REQUEST_METHOD'] ) && 'POST' === $_SERVER['REQUEST_METHOD'] ) {
+			$action         = isset( $_POST['action'] ) ? sanitize_text_field( wp_unslash( $_POST['action'] ) ) : '';
+			$requested_with = isset( $_SERVER['HTTP_X_REQUESTED_WITH'] ) ? sanitize_text_field( wp_unslash( $_SERVER['HTTP_X_REQUESTED_WITH'] ) ) : '';
+
+			switch ( true ) {
+				case ( false !== strpos( $action, 'nf_ajax_submit' ) || ( isset( $_POST['ninja'] ) && 'xmlhttprequest' !== $requested_with ) ):
+					return new LEADEE_NinjaDriver();
+				case ( false !== strpos( $action, '_wpcf7' ) || ( isset( $_POST['_wpcf7'] ) && 'xmlhttprequest' !== $requested_with ) ):
+					return new LEADEE_ContactLEADEEForm7Driver();
+				case ( false !== strpos( $action, 'wpforms' ) || ( isset( $_POST['wpforms'] ) && 'xmlhttprequest' !== $requested_with ) ):
+					return new LEADEE_WpFormsDriver();
+				default:
+					return null;
+			}
+		}
+
+		return null;
+	}
 }

@@ -1,59 +1,79 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 
-class ContactForm7Driver implements FormDriver
-{
-    /**
-     * @var LeadeeFunctions
-     */
-    private $functions;
-    /**
-     * @var Detector
-     */
-    private $detector;
+/**
+ * Class ContactForm7Driver
+ *
+ * This class implements the FormDriver interface for handling Contact Form 7 submissions.
+ */
+class LEADEE_ContactLEADEEForm7Driver implements LEADEE_FormDriver {
 
-    /**
-     * @var DriverHelper
-     */
-    private $driverHelper;
 
-    public function __construct()
-    {
-        $this->functions = new LeadeeFunctions();
-        $this->detector = new Detector();
-        $this->driverHelper = new DriverHelper();
-    }
+	/**
+	 * @var LEADEE_Functions $functions An instance of the Leadee_Functions class.
+	 */
+	private $functions;
 
-    public function run($data)
-    {
-        $leadee_first_visit_url_param = 'leadee_first_visit_url';
-        $leadee_source_param = 'leadee_source';
-        //get post id
-        $post_id = $this->driverHelper->take_page_post_id();
+	/**
+	 * @var LEADEE_Detector $detector An instance of the Detector class.
+	 */
+	private $detector;
 
-        $cookiesUtil = new CookiesUtil();
-        $leadee_first_visit_url = $cookiesUtil->getCookie($leadee_first_visit_url_param) !== null ? sanitize_text_field($cookiesUtil->getCookie($leadee_first_visit_url_param)) : '';
-        $leadee_source = $cookiesUtil->getCookie($leadee_source_param) !== null ? sanitize_text_field($cookiesUtil->getCookie($leadee_source_param)) : '';
+	/**
+	 * @var LEADEE_DriverHelper $driver_helper An instance of the DriverHelper class.
+	 */
+	private $driver_helper;
 
-        $data_arr = $this->detector->detect($_SERVER['HTTP_USER_AGENT'], $leadee_source, $leadee_first_visit_url);
+	/**
+	 * ContactForm7Driver constructor.
+	 */
+	public function __construct() {
+		$this->functions     = new LEADEE_Functions();
+		$this->detector      = new LEADEE_Detector();
+		$this->driver_helper = new LEADEE_DriverHelper();
+	}
 
-        $fields = array_filter($data, function ($key) {
-            return strpos($key, '_wpcf7') !== 0;
-        }, ARRAY_FILTER_USE_KEY);
+	/**
+	 * Run the Contact Form 7 driver to handle form submissions.
+	 *
+	 * @return int Returns 1 upon successful execution.
+	 */
+	public function run() {
+		$post_id                = $this->driver_helper->take_page_post_id();
+		$leadee_first_visit_url = isset( $_COOKIE['leadee_first_visit_url'] ) ? esc_url_raw( wp_unslash( $_COOKIE['leadee_first_visit_url'] ) ) : null;
+		$leadee_source          = isset( $_COOKIE['leadee_source'] ) ? sanitize_text_field( wp_unslash( $_COOKIE['leadee_source'] ) ) : null;
+		$user_agent             = isset( $_SERVER['HTTP_USER_AGENT'] ) ? sanitize_text_field( wp_unslash( $_SERVER['HTTP_USER_AGENT'] ) ) : null;
 
-        $fields_for_db = [];
-        $i = 0;
-        foreach ($fields as $key => $item) {
-            $fields_for_db[$i] = ['field' => "", 'value' => sanitize_text_field($item)];
-            $i++;
-        }
+		$data_arr = $this->detector->detect( $user_agent, $leadee_source, $leadee_first_visit_url );
 
-        $form_id = absint($data['_wpcf7']);
-        $status_and_cost_by_target_type = $this->functions->get_status_and_cost_by_target_type('cf7', $form_id);
+		// Here it is impossible to do otherwise, the contact-form passes dynamic fields.
+		$fields = array_filter(
+			filter_input_array( INPUT_POST, FILTER_DEFAULT, FILTER_REQUIRE_ARRAY ) ?? array(),
+			function ( $key ) {
+				return strpos( $key, '_wpcf7' ) !== 0;
+			},
+			ARRAY_FILTER_USE_KEY
+		);
 
-        if (isset($status_and_cost_by_target_type->status) && $status_and_cost_by_target_type->status == 1) {
-            $this->functions->write_lead($post_id, $form_id, $fields_for_db, $data_arr, 'cf7', $status_and_cost_by_target_type->cost);
-        }
+		$fields_for_db = array();
+		$i             = 0;
+		foreach ( $fields as $item ) {
+			$fields_for_db[ $i ] = array(
+				'field' => '',
+				'value' => sanitize_text_field( $item ),
+			);
+			++$i;
+		}
+		$form_id = isset( $_POST['_wpcf7'] ) ? (int) $_POST['_wpcf7'] : 0;
 
-        return 1;
-    }
+		$status_and_cost_by_target_type = $this->functions->get_status_and_cost_by_target_type( 'cf7', $form_id );
+
+		if ( isset( $status_and_cost_by_target_type->status ) && '1' === $status_and_cost_by_target_type->status ) {
+			$this->functions->write_lead( $post_id, $form_id, $fields_for_db, $data_arr, 'cf7', $status_and_cost_by_target_type->cost );
+		}
+
+		return 1;
+	}
 }

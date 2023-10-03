@@ -1,26 +1,35 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+/**
+ * Class DriverHelper
+ *
+ * This class provides helper methods related to drivers.
+ */
+class LEADEE_DriverHelper {
 
+	/**
+	 * Get the post ID of the current page based on the HTTP_REFERER.
+	 *
+	 * @return int The post ID of the current page, or 0 if not found.
+	 */
+	public static function take_page_post_id() {
+		$referrer_raw = filter_input( INPUT_SERVER, 'HTTP_REFERER', FILTER_SANITIZE_URL );
 
-class DriverHelper
-{
+		if ( $referrer_raw ) {
+			$referrer_raw = esc_url_raw( wp_unslash( $referrer_raw ) );
+			$parsed_url   = wp_parse_url( trim( $referrer_raw ) );
 
-    /**
-     * @return int
-     */
-    public static function take_page_post_id()
-    {
-        if (isset($_SERVER["HTTP_REFERER"])) {
-            $pars_url = $_SERVER["HTTP_REFERER"];
-        }
-        $parsed_url = wp_parse_url(trim($pars_url));
+			$slug = sanitize_text_field( $parsed_url['path'] ?? '/' );
+			$slug = ltrim( $slug, '/' ) ?: '/'; // Fallback to '/' if $slug is empty after trimming.
 
-        $slug = substr($parsed_url['path'], 1);
-        if ($slug == '') $slug = '/';
-        if (!isset(get_page_by_path($slug)->ID) || is_null(get_page_by_path($slug)->ID)) {
-            $post_id = 0;
-        } else {
-            $post_id = get_page_by_path($slug)->ID;
-        }
-        return $post_id;
-    }
+			// Get the page by path
+			$page = get_page_by_path( $slug );
+
+			return $page->ID ?? 0; // Directly return the page ID or 0 if not set.
+		}
+
+		return 0;
+	}
 }
