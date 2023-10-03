@@ -8,7 +8,7 @@
         $.ajax({
             url: outData.siteUrl + LEADEE_API_PARAM + API_SETTINGS_SET_OPTION_VALUE,
             type: 'post',
-            data: {'type': 'leads-table-colums', 'option': option, 'value': value},
+            data: {'type': 'leads-table-columns', 'option': option, 'value': value},
             dataType: 'JSON',
             success: function () {
                 openAlert("Saved!");
