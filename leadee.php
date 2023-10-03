@@ -1,10 +1,13 @@
 <?php
 /**
  * Plugin Name: Leadee
+ * Contributors: leadeeplugin
  * Description: Leadee is a user-friendly plugin that collecting leads from Contact Form 7, WPForms, Ninja Forms, and allows you to analyze them in a user-friendly dashboard.
  * Plugin URI: https://leadee.io?utm_source=refferal&utm_medium=wp_admin&utm_content=plugin_url
  * Author: Leadee.io
- * Version: 0.5.0
+ * Version: 1.0.0
+ * Stable tag: 1.0.0
+ * Tested up to: 6.3
  * Author URI: https://leadee.io?utm_source=refferal&utm_medium=wp_admin&utm_content=author_url
  *
  * Text Domain: leadee
@@ -16,54 +19,51 @@
  * License URI:        https://www.gnu.org/licenses/gpl-3.0.html
  */
 
-define('LEADEE_VERSION', '0.5.0');
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 
-define('LEADEE_PLUGIN', __FILE__);
+define( 'LEADEE_VERSION', '1.0.0' );
 
-define('LEADEE_PLUGIN_DIR', untrailingslashit(dirname(LEADEE_PLUGIN)));
+define( 'LEADEE_PLUGIN', __FILE__ );
 
-define('LEADEE_PLUGIN_URL',
-    untrailingslashit(plugins_url('', LEADEE_PLUGIN))
+define( 'LEADEE_PLUGIN_DIR', untrailingslashit( dirname( LEADEE_PLUGIN ) ) );
+
+define(
+	'LEADEE_PLUGIN_URL',
+	untrailingslashit( plugins_url( '', LEADEE_PLUGIN ) )
 );
 
-define('LEADEE_PLUGIN_BASENAME', plugin_basename(LEADEE_PLUGIN));
+define( 'LEADEE_PLUGIN_BASENAME', plugin_basename( LEADEE_PLUGIN ) );
 
-define('LEADEE_PLUGIN_NAME', trim(dirname(LEADEE_PLUGIN_BASENAME), '/'));
+define( 'LEADEE_PLUGIN_NAME', trim( dirname( LEADEE_PLUGIN_BASENAME ), '/' ) );
 
 // If this file is called directly, abort.
-if (!defined('WPINC')) {
-    die;
+if ( ! defined( 'WPINC' ) ) {
+	die;
 }
 
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-leadee-activator.php
  */
-function activate_leadee()
-{
-    require_once plugin_dir_path(__FILE__) . 'includes/class-leadee-activator.php';
-    (new leadee_Activator)->activate();
+function leadee_activate() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-leadee-activator.php';
+	( new LEADEE_Activator() )->activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-leadee-deactivator.php
  */
-function deactivate_leadee()
-{
-    require_once LEADEE_PLUGIN_DIR . '/includes/class-leadee-deactivator.php';
-    leadee_Deactivator::deactivate();
+function leadee_deactivate() {
+	require_once LEADEE_PLUGIN_DIR . '/includes/class-leadee-deactivator.php';
+	LEADEE_Deactivator::deactivate();
 }
 
-function update_any_when_plugin_upgrade($upgrader_object, $options)
-{
-    require_once LEADEE_PLUGIN_DIR . '/includes/class-leadee-updater.php';
-    leadee_Updater::update_plugin($upgrader_object, $options);
-}
+register_activation_hook( __FILE__, 'leadee_activate' );
+register_deactivation_hook( __FILE__, 'leadee_deactivate' );
 
-register_activation_hook(__FILE__, 'activate_leadee');
-register_deactivation_hook(__FILE__, 'deactivate_leadee');
-add_action('upgrader_process_complete', 'update_any_when_plugin_upgrade', 10, 2);
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -77,25 +77,22 @@ require LEADEE_PLUGIN_DIR . '/includes/class-leadee.php';
  * Since everything within the plugin is registered via hooks,
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
- *
  */
-function run_leadee()
-{
-    $plugin = new leadee();
-    $plugin->run();
+function leadee_run() {
+	$plugin = new LEADEE_MainInit();
+	$plugin->leadee_start();
 }
 
-//i18n plugin settings for current user
+// i18n plugin settings for current user
 
-function leadee_load_textdomain()
-{
-    $locale = get_user_locale();
-    if ($locale !== null && $locale !== '') {
-        $mofile = plugin_dir_path(__FILE__) . 'languages/leadee-' . $locale . '.mo';
-        load_textdomain('leadee', $mofile);
-    }
+function leadee_load_textdomain() {
+	$locale = get_user_locale();
+	if ( $locale !== null && $locale !== '' ) {
+		$mofile = plugin_dir_path( __FILE__ ) . 'languages/leadee-' . $locale . '.mo';
+		load_textdomain( 'leadee', $mofile );
+	}
 }
 
-add_action('plugins_loaded', 'leadee_load_textdomain');
+add_action( 'plugins_loaded', 'leadee_load_textdomain' );
 
-run_leadee();
+leadee_run();
