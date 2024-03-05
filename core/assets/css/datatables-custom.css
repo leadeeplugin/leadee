@@ -1,10 +1,10 @@
 td.dt-control {
-    background: url("https://www.datatables.net/examples/resources/details_open.png") no-repeat center center;
+    background: url("img/details_open.png") no-repeat center center;
     cursor: pointer
 }
 
 tr.dt-hasChild td.dt-control {
-    background: url("https://www.datatables.net/examples/resources/details_close.png") no-repeat center center
+    background: url("img/details_close.png") no-repeat center center
 }
 
 table.dataTable th.dt-left, table.dataTable td.dt-left {
@@ -259,12 +259,12 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^=col-]:last-
 }
 
 td.dt-control {
-    background: url("https://www.datatables.net/examples/resources/details_open.png") no-repeat center center;
+    background: url("img/details_open.png") no-repeat center center;
     cursor: pointer
 }
 
 tr.dt-hasChild td.dt-control {
-    background: url("https://www.datatables.net/examples/resources/details_close.png") no-repeat center center
+    background: url("img/details_close.png") no-repeat center center
 }
 
 table.dataTable th.dt-left, table.dataTable td.dt-left {
