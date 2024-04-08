@@ -59,3 +59,8 @@ Done!
 No complex setup is required for the initial configuration of the plugin.
 
 If you discover any errors, please report them to support@leadee.io.
+
+== Changelog ==
+
+= 1.0.1 - 2024-04-08 =
+* Fix: plugin description and tested on wp 6.5
