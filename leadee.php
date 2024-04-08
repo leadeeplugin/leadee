@@ -5,9 +5,9 @@
  * Description: Leadee is a user-friendly plugin that collecting leads from Contact Form 7, WPForms, Ninja Forms, and allows you to analyze them in a user-friendly dashboard.
  * Plugin URI: https://leadee.io?utm_source=refferal&utm_medium=wp_admin&utm_content=plugin_url
  * Author: Leadee.io
- * Version: 1.0.0
- * Stable tag: 1.0.0
- * Tested up to: 6.3
+ * Version: 1.0.1
+ * Stable tag: 1.0.1
+ * Tested up to: 6.5
  * Author URI: https://leadee.io?utm_source=refferal&utm_medium=wp_admin&utm_content=author_url
  *
  * Text Domain: leadee
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-define( 'LEADEE_VERSION', '1.0.0' );
+define( 'LEADEE_VERSION', '1.0.1' );
 
 define( 'LEADEE_PLUGIN', __FILE__ );
 
