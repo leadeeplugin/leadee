@@ -1,16 +1,16 @@
 === Leadee - Leads Analytics and Message Storage Plugin ===
 Contributors: leadeeplugin
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Site: https://leadee.io
 Donate link: https://donate.leadee.io
-Tags: analytics, leads, message storage, WordPress analytics, analytics dashboard, marketing, statistics, tracking, stats, contact form, contact form 7, ninja forms, wpforms
+Tags: leads analytics, wordpress analytics, message storage, analytics dashboard, contact form 7
 Requires at least: 5.9
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Leadee is a convenient plugin with a sleek design that stores messages from Contact Form 7, WPForms, Ninja Forms and allows you to analyze them in a user-friendly dashboard.
+Store and analyze leads and messages from Contact Form 7, WPForms, Ninja Forms in a convenient Leadee dashboard.
 
 == Description ==
 
