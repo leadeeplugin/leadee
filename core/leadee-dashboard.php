@@ -12,21 +12,20 @@ if ( ! function_exists( 'wp_get_current_user' ) ) {
 function leadee_admin_menu() {
 	// Add Leadee menu item.
 	add_menu_page(
-		__( 'Leadee', 'leadee-dashboard' ),
-		__( 'Leadee', 'leadee-dashboard' ),
+		'Leadee',
+		'Leadee <span id="leadee-unread-count" class="leadee-notifications-count update-plugins count-0"><span class="plugin-count">0</span></span>',
 		'activate_plugins',
 		'leadee-dashboard',
 		'leadee_dashboard',
 		'data:image/svg+xml;base64,' . base64_encode(
 			wp_remote_get(
 				LEADEE_PLUGIN_URL . '/core/assets/image/leadee.svg',
-				array(
-					'sslverify' => false,
-				)
+				array('sslverify' => false,)
 			)['body']
 		),
 		3
 	);
+
 
 	/**
 	 * Render the Leadee dashboard.
