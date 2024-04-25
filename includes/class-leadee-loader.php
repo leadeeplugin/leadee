@@ -39,8 +39,8 @@ class LEADEE_Loader {
 	 * @param string $hook The name of the WordPress action that is being registered.
 	 * @param object $component A reference to the instance of the object on which the action is defined.
 	 * @param string $callback The name of the function definition on the $component.
-	 * @param int    $priority Optional. he priority at which the function should be fired. Default is 10.
-	 * @param int    $accepted_args Optional. The number of arguments that should be passed to the $callback. Default is 1.
+	 * @param int $priority Optional. he priority at which the function should be fired. Default is 10.
+	 * @param int $accepted_args Optional. The number of arguments that should be passed to the $callback. Default is 1.
 	 */
 	public function add_action( $hook, $component, $callback, $priority = 10, $accepted_args = 1 ) {
 
@@ -53,8 +53,8 @@ class LEADEE_Loader {
 	 * @param string $hook The name of the WordPress filter that is being registered.
 	 * @param object $component A reference to the instance of the object on which the filter is defined.
 	 * @param string $callback The name of the function definition on the $component.
-	 * @param int    $priority Optional. he priority at which the function should be fired. Default is 10.
-	 * @param int    $accepted_args Optional. The number of arguments that should be passed to the $callback. Default is 1
+	 * @param int $priority Optional. he priority at which the function should be fired. Default is 10.
+	 * @param int $accepted_args Optional. The number of arguments that should be passed to the $callback. Default is 1
 	 */
 	public function add_filter( $hook, $component, $callback, $priority = 10, $accepted_args = 1 ) {
 
@@ -67,12 +67,12 @@ class LEADEE_Loader {
 	 *
 	 * @access      private
 	 *
-	 * @param array  $hooks The collection of hooks that is being registered (that is, actions or filters).
+	 * @param array $hooks The collection of hooks that is being registered (that is, actions or filters).
 	 * @param string $hook The name of the WordPress filter that is being registered.
 	 * @param object $component A reference to the instance of the object on which the filter is defined.
 	 * @param string $callback The name of the function definition on the $component.
-	 * @param int    $priority The priority at which the function should be fired.
-	 * @param int    $accepted_args The number of arguments that should be passed to the $callback.
+	 * @param int $priority The priority at which the function should be fired.
+	 * @param int $accepted_args The number of arguments that should be passed to the $callback.
 	 *
 	 * @return      array                           The collection of actions and filters registered with WordPress.
 	 */
@@ -92,13 +92,24 @@ class LEADEE_Loader {
 	/**
 	 * Register the filters and actions with WordPress.
 	 */
-	/**
-	 * Register the filters and actions with WordPress.
-	 */
-	/**
-	 * Register the filters and actions with WordPress.
-	 */
 	public function leadee_run() {
+		function leadee_enqueue_admin_assets() {
+			wp_enqueue_script( 'leadee-admin-script', LEADEE_PLUGIN_URL . '/core/assets/js/admin/leadee-admin.js', array( 'jquery' ), LEADEE_VERSION, true );
+			wp_localize_script(
+				'leadee-admin-script',
+				'outData',
+				array(
+					'siteUrl' => get_site_url(),
+				)
+			);
+
+			wp_enqueue_style( 'leadee-admin-style', LEADEE_PLUGIN_URL . '/core/assets/css/admin/leadee-admin.css', array(), LEADEE_VERSION );
+		}
+
+		add_action( 'admin_enqueue_scripts', 'leadee_enqueue_admin_assets' );
+
+
+
 		$leadee_pages = array( 'dashboard', 'goals', 'goals-settings', 'leads', 'leads-table-settings' );
 
 		if ( is_user_logged_in() && current_user_can( 'activate_plugins' ) ) {
