@@ -1,6 +1,6 @@
 === Leadee - Leads Analytics and Message Storage Plugin ===
 Contributors: leadeeplugin
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Site: https://leadee.io
 Donate link: https://donate.leadee.io
 Tags: leads analytics, wordpress analytics, message storage, analytics dashboard, contact form 7
@@ -64,3 +64,6 @@ If you discover any errors, please report them to support@leadee.io.
 
 = 1.0.1 - 2024-04-08 =
 * Fix: plugin description and tested on wp 6.5
+
+= 1.0.2 - 2024-04-30 =
+* Fix: added menu counter
