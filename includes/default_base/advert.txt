@@ -1,6 +1,7 @@
 fbclid
 gclid
 yclid
+ysclid
 rdt_cid
 msclkid
 utm_source
