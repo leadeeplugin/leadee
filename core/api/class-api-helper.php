@@ -194,8 +194,9 @@ class LEADEE_ApiHelper {
 		// Handle date time formatting securely
 		$dt_from_db_in_utc0 = sanitize_text_field( $lead_data->dt );
 		$dt                 = new DateTime( $dt_from_db_in_utc0, new DateTimeZone( 'UTC' ) );
-		$formatted_dt       = $dt->format( 'Y-m-d H:i:s' );
-		$data[ $key ]['dt'] = esc_html( $formatted_dt );
+		$formatted_dt_ymd   = $dt->format( 'Y-m-d' );
+		$formatted_dt_his   = $dt->format( 'H:i:s' );
+		$data[ $key ]['dt'] = esc_html( $formatted_dt_ymd ) . '<br>' . esc_html( $formatted_dt_his );
 
 		// Encode JSON securely
 		$fields_json            = wp_json_encode( $this->set_names_for_field_data( $lead_data->fields ) );
