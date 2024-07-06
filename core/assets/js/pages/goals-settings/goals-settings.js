@@ -22,7 +22,7 @@
                     render: (datum, type, row) => {
                         const status = parseInt(row.status);
                         const checked = status === 1;
-                        const statusText = checked ? "Yes" : "Not";
+                        const statusText = checked ? localDataGoalsSettings.yesText : localDataGoalsSettings.notText;
 
                         return `
             <div class="status-input-holder">
@@ -71,7 +71,7 @@
                     previous: '<span class="prev-datatable-icon"><i class="icon-light-left"></i></span>',
                     next: '<span class="next-datatable-icon"><i class="icon-light-right"></i></span>'
                 },
-                emptyTable: "No data"
+                emptyTable: localDataGoalsSettings.noDataText
             }
         });
 
@@ -93,7 +93,7 @@
             url: outData.siteUrl + LEADEE_API_PARAM + API_SAVE_TARGET_SETTING,
             data: data,
             success: function () {
-                openAlert("Saved!");
+                openAlert(localDataGoalsSettings.savedText);
             }
         });
 
@@ -144,10 +144,10 @@
         var itemCheckbox = input.closest('.item-checkbox');
         var itemTitle = itemCheckbox.find('.item-title');
         if (input.is(":checked")) {
-            itemTitle.html('Yes');
+            itemTitle.html(localDataGoalsSettings.yesText);
             input.attr('checked', 'checked');
         } else {
-            itemTitle.html('No');
+            itemTitle.html(localDataGoalsSettings.notText);
             input.removeAttr('checked');
         }
     });
@@ -179,7 +179,7 @@
             data: postForm,
             success: function () {
                 $('#target-progress-num').html('<span>$' + leads_month_sum + '</span>');
-                openAlert("Saved!");
+                openAlert(localDataGoalsSettings.savedText);
             }
         });
 

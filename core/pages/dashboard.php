@@ -255,7 +255,7 @@ $scripts_loader->load_scripts_page_dashboard();
 			<div class="swiper-slide swiper-80 swiper-md-80 swiper-lg-40">
 				<div class="card" id="popular-screen">
 					<div class="card-content card-content-padding">
-						<h2 class="title-medium"><?php esc_html_e( 'Popular screen sizes', 'leadee' ); ?></h2>
+						<h2 class="title-medium"><?php esc_html_e( 'Popular screen sizes top 5', 'leadee' ); ?></h2>
 						<div><?php esc_html_e( 'With these screen sizes, requests are left most often. Top 5', 'leadee' ); ?></div>
 						<canvas class="chart" id="chartScreenSize" width="400" height="400"></canvas>
 					</div>

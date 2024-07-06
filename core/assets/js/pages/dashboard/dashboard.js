@@ -147,7 +147,7 @@ function showChartSource(data) {
     }
 
     function showNoDataMessage() {
-        $("#leads-new-widget").html("<div class='no-data-last-leads'><p><br><br>We are waiting for leads.<br>Submit a test request<br>and you will see a nice notification here :)</p></div>");
+        $("#leads-new-widget").html('<div class=\'no-data-last-leads\'><p><br><br>' + localDataDashboard.emptyNewLeads + '</p></div>');
     }
 
 function showTarget(data){
@@ -217,7 +217,7 @@ function showTarget(data){
     function showOsClients(data) {
         var allItems = data["allItems"];
         if (data["items"].length === 0) {
-            $("#os-clients").html("No data");
+            $("#os-clients").html(localDataDashboard.noDataText);
             return;
         }
         $("#os-clients").html("");
@@ -276,7 +276,7 @@ function showTarget(data){
                 `);
             });
         } else {
-            $("#popular-pages-data").append('No data');
+            $("#popular-pages-data").append(localDataDashboard.noDataText);
         }
     }
 

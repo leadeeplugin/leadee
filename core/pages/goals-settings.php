@@ -53,7 +53,7 @@ $functions = new LEADEE_Functions();
 				<div class="content-title">
 					<h2 class="title-medium"><?php esc_html_e( 'Enter goal amount', 'leadee' ); ?></h2>
 					<div class="target-medium-info">
-						<?php esc_html_e( 'How much do you want leads and conversions that which users will  for 1 month?', 'leadee' ); ?>
+						<?php esc_html_e( 'How much do you want leads and conversions that which users will for 1 month?', 'leadee' ); ?>
 					</div>
 
 					<div class="item-target-form">

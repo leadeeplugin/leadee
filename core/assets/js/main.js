@@ -84,7 +84,7 @@ let currentUrlParams = new URLSearchParams(window.location.search);
         const {dt, text} = data;
         const notificationWithButton = app.notification.create({
             icon: '<i class="leadee-icon leadee-icon-big icon-bell" style="width: 40px !important;height: 40px !important;"></i>',
-            title: 'New lead!',
+            title: localDataMain.newLead,
             subtitle: text,
             text: dt,
             closeButton: true,
@@ -230,13 +230,12 @@ function updateStatData(dateFrom, dateTo) {
 }
 
 function getFullTextForPlugin() {
-    return 'Leadee running. \nPossibly for a selected period of time\n' +
-        'clients did not leave requests?\n' +
-        'Please select a different date range.';
+    return localDataMain.emptyLeadsTableText.replace( /<br\s*\/?>/gi, '\n' );
 }
 
+
 function getShortTextForPlugin() {
-    return 'No data';
+    return localDataMain.noDataText;
 }
 
 function addToCurrentUrlParam(key, val) {

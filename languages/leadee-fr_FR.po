@@ -1,0 +1,255 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Leadee\n"
+"Report-Msgid-Bugs-To: https://leadee.io/\n"
+"POT-Creation-Date: 2021-03-11 09:51+0000\n"
+"PO-Revision-Date: 2023-05-23 14:27+0000\n"
+"Last-Translator: FULL NAME EMAIL@ADDRESS\n"
+"Language-Team: French (France)\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7\n"
+"X-Domain: loco-translate"
+
+msgid "Advertising systems"
+msgstr "Systèmes publicitaires"
+
+msgid "All goals are summarized in quantitative and monetary terms."
+msgstr "Tous les objectifs sont résumés en termes quantitatifs et monétaires."
+
+msgid "Average count of goals"
+msgstr "Nombre moyen d'objectifs"
+
+msgid "Average count of leads"
+msgstr "Nombre moyen de leads"
+
+msgid "Browser"
+msgstr "Navigateur"
+
+#: сore/pages/leads-table-settings.php
+msgid "Column settings"
+msgstr "Paramètres des colonnes"
+
+msgid "Conversion goals"
+msgstr "Objectifs de conversion"
+
+msgid "Cost"
+msgstr "Coût"
+
+msgid "Count"
+msgstr "Compte"
+
+msgid "CSV table"
+msgstr "Tableau CSV"
+
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: сore/pages/leads.php
+msgid "Date"
+msgstr "Date"
+
+msgid "Device OS"
+msgstr "Système d'exploitation de l'appareil"
+
+msgid "Device type"
+msgstr "Type d'appareil"
+
+msgid "Direct traffic"
+msgstr "Trafic direct"
+
+#: core/partials/header.php
+msgid "Donate us"
+msgstr "Faites un don"
+
+msgid "Enter amount in $"
+msgstr "Saisissez le montant en $"
+
+msgid "Enter goal amount"
+msgstr "Saisissez le montant de l'objectif"
+
+msgid "Excel table"
+msgstr "Tableau Excel"
+
+msgid "Export"
+msgstr "Exporter"
+
+msgid "Facebook, Instagram, VK, etc"
+msgstr "Facebook, Instagram, VK, etc"
+
+msgid "First visit params"
+msgstr "Paramètres de la première visite"
+
+msgid "For leads"
+msgstr "Pour les leads"
+
+msgid "Form"
+msgstr "Formulaire"
+
+msgid "Form fields"
+msgstr "Champs du formulaire"
+
+msgid "Form type"
+msgstr "Type de formulaire"
+
+msgid "From those who entered the site address"
+msgstr "De ceux qui ont saisi l'adresse du site"
+
+msgid ""
+"Goal = useful action on the site (application, click on the phone, etc.)."
+msgstr ""
+"Objectif = action utile sur le site (demande, clic sur le téléphone, etc.)."
+
+msgid "Goal amount"
+msgstr "Montant de l'objectif"
+
+msgid "Goal not set!"
+msgstr "Objectif non défini !"
+
+#: сore/pages/goals-settings.php
+msgid "Goal sum setting for forms"
+msgstr "Réglage de la somme de l'objectif pour les formulaires"
+
+msgid "Goals"
+msgstr "Objectifs"
+
+msgid "Goals of leads"
+msgstr "Objectifs des leads"
+
+msgid "Goals settings"
+msgstr "Paramètres des objectifs"
+
+#: сore/pages/goals.php
+msgid "Goals Statistics"
+msgstr "Statistiques des objectifs"
+
+msgid "Google Ads, FB Ads, etc"
+msgstr "Google Ads, FB Ads, etc"
+
+msgid "Google, Bing, Yandex, etc"
+msgstr "Google, Bing, Yandex, etc"
+
+msgid "How close to the target <strong>for the current month</strong>"
+msgstr "À quelle distance de l'objectif <strong>pour le mois en cours</strong>"
+
+msgid ""
+"How much do you want leads and conversions that which users will for 1 month?"
+msgstr ""
+"Combien de leads et de conversions souhaitez-vous que les utilisateurs "
+"réalisent en 1 mois?"
+
+msgid "Last leads"
+msgstr "Derniers leads"
+
+msgid "Leadee news"
+msgstr "Actualités Leadee"
+
+msgid "Leads"
+msgstr "Leads"
+
+msgid "Leads sources"
+msgstr "Sources des leads"
+
+#: сore/pages/dashboard.php
+msgid "Leads statistics"
+msgstr "Statistiques des leads"
+
+msgid "Leads sum"
+msgstr "Somme des leads"
+
+msgid "Leads table settings"
+msgstr "Paramètres du tableau des leads"
+
+msgid "of goal achievement per month"
+msgstr "de réalisation de l'objectif par mois"
+
+msgid "Operating Systems"
+msgstr "Systèmes d'exploitation"
+
+msgid "OS clients"
+msgstr "Clients OS"
+
+msgid "Page"
+msgstr "Page"
+
+msgid "Plugin settings"
+msgstr "Paramètres du plugin"
+
+msgid "Popular Pages"
+msgstr "Pages populaires"
+
+msgid "Popular screen sizes"
+msgstr "Tailles d'écran populaires"
+
+msgid "Referral traffic"
+msgstr "Trafic de référence"
+
+msgid "Save data"
+msgstr "Enregistrer les données"
+
+msgid "Screen"
+msgstr "Écran"
+
+msgid "Search engines"
+msgstr "Moteurs de recherche"
+
+msgid "Set goal"
+msgstr "Définir un objectif"
+
+msgid "Social networks"
+msgstr "Réseaux sociaux"
+
+msgid "Source"
+msgstr "Source"
+
+msgid "Source type"
+msgstr "Type de source"
+
+msgid "Status"
+msgstr "Statut"
+
+msgid "Sum"
+msgstr "Somme"
+
+msgid "Support & Faq"
+msgstr "Assistance et FAQ"
+
+msgid ""
+"The table reflects the cost of the goals that will come from contact forms"
+msgstr ""
+"Le tableau reflète le coût des objectifs qui proviendront des formulaires de "
+"contact"
+
+msgid "This is popular pages of clients leads."
+msgstr "Ce sont les pages populaires des leads clients."
+
+msgid "Title"
+msgstr "Titre"
+
+msgid "Today"
+msgstr "Aujourd'hui"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Websites, forums, blogs, etc."
+msgstr "Sites Web, forums, blogs, etc."
+
+msgid "Week"
+msgstr "Semaine"
+
+msgid "Where do leads come from"
+msgstr "D'où viennent les leads"
+
+msgid "With these screen sizes, requests are left most often"
+msgstr "Avec ces tailles d'écran, les demandes sont les plus fréquentes"
+
+msgid "Yesterday"
+msgstr "Hier"
+
+msgid "Your goal"
+msgstr "Votre objectif"

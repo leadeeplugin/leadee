@@ -247,9 +247,9 @@
     $(document).ready(function () {
         var filter = currentUrlParams.get('filter');
         var filterBlock = '<div class="row leads-table-filter"  id="datatable-filters">'
-            + getHtmlSelect(filter, 'entries', 'entries', 0, 'Entries:', ['25', '50', '100'])
-            + getHtmlSelect(filter, 'source_category', 'filter', 4, 'Source:', ['', 'advert', 'social', 'referal', 'direct', 'All'])
-            + getHtmlSelect(filter, 'device_type', 'filter', 4, 'Device:', ['', 'mobile', 'desktop', 'All'])
+            + getHtmlSelect(filter, 'entries', 'entries', 0, localDataLeads.Entries + ':', ['25', '50', '100'], 15)
+            + getHtmlSelect(filter, 'source_category', 'filter', 4, localDataLeads.Source + ':', ['', 'advert', 'social', 'referal', 'direct', 'All'], 25)
+            + getHtmlSelect(filter, 'device_type', 'filter', 4, localDataLeads.Device + ':', ['', 'mobile', 'desktop', 'All'], 25)
             + getHtmlResetButton()
         '</div>';
         $('#leads-filter-block').before(filterBlock);
@@ -296,8 +296,8 @@
 })(jQuery);
 
 
-function getHtmlSelect(filter, type, classType, data_num_column, name, data) {
-    return '<div class="col-100 medium-25"><div class="dataTables_additional_filter item-inner inner-center">\n' +
+function getHtmlSelect(filter, type, classType, data_num_column, name, data, column_size) {
+    return '<div class="col-100 medium-' + column_size + '"><div class="dataTables_additional_filter item-inner inner-center">\n' +
         '<div class="item-title item-label">' + name + '</div>\n' +
         '<div class="item-input-wrap input-dropdown-wrap">\n' +
         '<select placeholder="Please choose..." class="select-type-' + classType + '" data-type="' + type + '">\n' +
@@ -310,7 +310,7 @@ function getHtmlSelect(filter, type, classType, data_num_column, name, data) {
 
 function getHtmlResetButton() {
     return '<div class="col-100 medium-25"><div class="dataTables_additional_filter item-inner inner-center">\n' +
-        '<button class="reset-filter-button" id="reset-filter-button">Reset filter</button>\n' +
+        '<button class="reset-filter-button" id="reset-filter-button">' + localDataLeads.ResetFilter + '</button>\n' +
         '</div>' +
         '</div>';
 }
@@ -320,7 +320,7 @@ function getSelectHtml(filter, data) {
     if (data.length > 0) {
         data.forEach((element) => {
             if (element === '') {
-                html = '<option value="">Select</option>';
+                html = '<option value="">' + localDataLeads.Select + '</option>';
             } else {
                 var element_value = element;
                 if (element === 'All') {

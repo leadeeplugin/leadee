@@ -28,7 +28,7 @@
                 var leads_month_count = data["leads-month-count"];
                 var leads_month_sum = data["leads-month-sum"];
 
-                $('#target-progress-text').html('<span>conversion: ' + leads_month_count + '</span>');
+                $('#target-progress-text').html('<span>' + localDataGoals.conversionText + ': ' + leads_month_count + '</span>');
                 leads_month_sum = (leads_month_sum !== null) ? leads_month_sum : '0';
                 $('#target-progress-num').html('<span>$' + leads_month_sum + '</span>');
                 $('#month-target').html('<span>$ ' + month_target + '</span>');

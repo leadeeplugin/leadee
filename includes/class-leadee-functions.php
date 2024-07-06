@@ -113,13 +113,13 @@ class LEADEE_Functions {
 	/**
 	 * Retrieve filtered and searched leads.
 	 *
-	 * @param int    $start Start index for pagination.
-	 * @param int    $limit Number of records to retrieve.
+	 * @param int $start Start index for pagination.
+	 * @param int $limit Number of records to retrieve.
 	 * @param string $order_by_column Column to order by.
 	 * @param string $order_asc_desc Sorting order (ASC or DESC).
 	 * @param string $from Start date.
 	 * @param string $to End date.
-	 * @param array  $filters Array of filters.
+	 * @param array $filters Array of filters.
 	 * @param string $search_text Search text.
 	 *
 	 * @return array
@@ -135,7 +135,7 @@ class LEADEE_Functions {
 	 *
 	 * @param string $from Start date.
 	 * @param string $to End date.
-	 * @param array  $filters Array of filters.
+	 * @param array $filters Array of filters.
 	 *
 	 * @return array
 	 */
@@ -378,7 +378,7 @@ class LEADEE_Functions {
 	 * Get the count of leads for a specific form type and form ID within a date range.
 	 *
 	 * @param string $form_type The type of the form (e.g., 'cf7', 'ninja', etc.).
-	 * @param int    $form_id The ID of the form.
+	 * @param int $form_id The ID of the form.
 	 * @param string $from Start date in 'YYYY-MM-DD' format.
 	 * @param string $to End date in 'YYYY-MM-DD' format.
 	 *
@@ -400,7 +400,7 @@ class LEADEE_Functions {
 	 * Get the sum of the 'cost' field for leads of a specific form type and form ID within a date range.
 	 *
 	 * @param string $form_type The type of the form (e.g., 'cf7', 'ninja', etc.).
-	 * @param int    $form_id The ID of the form.
+	 * @param int $form_id The ID of the form.
 	 * @param string $from Start date in 'YYYY-MM-DD' format.
 	 * @param string $to End date in 'YYYY-MM-DD' format.
 	 *
@@ -536,7 +536,7 @@ class LEADEE_Functions {
 	 *
 	 * @param string $type The setting type.
 	 * @param string $option The option name.
-	 * @param mixed  $value The value to set.
+	 * @param mixed $value The value to set.
 	 *
 	 * @return void
 	 */
@@ -610,7 +610,7 @@ class LEADEE_Functions {
 	 *
 	 * @param string $from Start date in 'YYYY-MM-DD' format.
 	 * @param string $to End date in 'YYYY-MM-DD' format.
-	 * @param int    $top_limit The maximum number of items to return.
+	 * @param int $top_limit The maximum number of items to return.
 	 *
 	 * @return array An array containing device operating system information.
 	 */
@@ -630,7 +630,7 @@ class LEADEE_Functions {
 	 *
 	 * @param string $from Start date in 'YYYY-MM-DD' format.
 	 * @param string $to End date in 'YYYY-MM-DD' format.
-	 * @param int    $top_limit The maximum number of items to return.
+	 * @param int $top_limit The maximum number of items to return.
 	 *
 	 * @return array An array containing device screen size information.
 	 */
@@ -650,7 +650,7 @@ class LEADEE_Functions {
 				$result[ $i ]['width'] = $day_res->device_width;
 				$result[ $i ]['count'] = $day_res->count;
 			}
-			++$i;
+			++ $i;
 		}
 
 		return $result;
@@ -704,7 +704,7 @@ class LEADEE_Functions {
 	 *
 	 * @param string $type The type of the target.
 	 * @param string $identifier The identifier of the target.
-	 * @param float  $cost The cost associated with the target.
+	 * @param float $cost The cost associated with the target.
 	 * @param string $status The status of the target.
 	 *
 	 * @return void
@@ -727,12 +727,12 @@ class LEADEE_Functions {
 	/**
 	 * Write a new lead entry.
 	 *
-	 * @param int    $post_id The ID of the associated WordPress post.
-	 * @param int    $form_id The ID of the form used to capture the lead.
-	 * @param array  $fields The form fields.
-	 * @param array  $data_arr The submitted data.
+	 * @param int $post_id The ID of the associated WordPress post.
+	 * @param int $form_id The ID of the form used to capture the lead.
+	 * @param array $fields The form fields.
+	 * @param array $data_arr The submitted data.
 	 * @param string $form_type The type of form used.
-	 * @param float  $lead_cost The cost of the lead.
+	 * @param float $lead_cost The cost of the lead.
 	 *
 	 * @return void
 	 */
@@ -811,7 +811,7 @@ class LEADEE_Functions {
 	 *
 	 * @param string $from Start date of the range.
 	 * @param string $to End date of the range.
-	 * @param int    $top_limit Maximum number of entries to retrieve.
+	 * @param int $top_limit Maximum number of entries to retrieve.
 	 *
 	 * @return array An associative array containing 'labels', 'data', and 'colors' for screen sizes.
 	 */
@@ -827,7 +827,7 @@ class LEADEE_Functions {
 			$labels[]                  = $screen['width'];
 			$colors[]                  = $colors_all[ $i ];
 			$screens_count_array[ $i ] = $screen['count'];
-			++$i;
+			++ $i;
 		}
 
 		$data_screen_size = array(
@@ -890,7 +890,7 @@ class LEADEE_Functions {
 	/**
 	 * Retrieve data values for a specific type of source for each day within a given period.
 	 *
-	 * @param array  $days An array containing the days within the period.
+	 * @param array $days An array containing the days within the period.
 	 * @param string $type_source The type of source for which to retrieve data.
 	 *
 	 * @return array An array containing data values for each day within the given period.
@@ -958,7 +958,7 @@ class LEADEE_Functions {
 	 * Generate data for new leads within a specified timezone and limit.
 	 *
 	 * @param string $timezone The timezone to be used for lead dates.
-	 * @param int    $limit The maximum number of leads to fetch.
+	 * @param int $limit The maximum number of leads to fetch.
 	 *
 	 * @return array An array of new leads, each with 'id', 'dt', and 'text' keys.
 	 *
@@ -1000,7 +1000,7 @@ class LEADEE_Functions {
 		$lead_time         = new DateTime( $date_of_lead->format( 'Y-m-d H:i:s' ) );
 		$diff              = $now_time->getTimestamp() - $lead_time->getTimestamp();
 		if ( $diff < 60 && $diff > 0 ) {
-			return 'just now';
+			return esc_html__( 'just now', 'leadee' );
 		}
 
 		if ( $diff < 86400 ) {
@@ -1065,7 +1065,7 @@ class LEADEE_Functions {
 	 *
 	 * @param string $from The start date for the range in 'YYYY-MM-DD' format.
 	 * @param string $to The end date for the range in 'YYYY-MM-DD' format.
-	 * @param int    $top_limit The maximum number of top clients to include.
+	 * @param int $top_limit The maximum number of top clients to include.
 	 *
 	 * @return array An associative array containing the top operating systems and
 	 * the total count of all items.
@@ -1239,8 +1239,8 @@ class LEADEE_Functions {
 	 *
 	 * @param string $type Type of the target setting, e.g., "monthly", "quarterly", etc.
 	 * @param string $identifier Unique identifier for the target setting.
-	 * @param int    $cost Cost associated with the target.
-	 * @param int    $status Status code for the target setting; generally 0 for inactive, 1 for active.
+	 * @param int $cost Cost associated with the target.
+	 * @param int $status Status code for the target setting; generally 0 for inactive, 1 for active.
 	 */
 	public function create_target_settings( $type, $identifier, $cost, $status ) {
 		$this->glob_wpdb->query(
@@ -1259,8 +1259,8 @@ class LEADEE_Functions {
 	 *
 	 * @param string $type Type of the target setting, e.g., "monthly", "quarterly", etc.
 	 * @param string $identifier Unique identifier for the target setting.
-	 * @param int    $cost Cost associated with the target.
-	 * @param int    $status Status code for the target setting; generally 0 for inactive, 1 for active.
+	 * @param int $cost Cost associated with the target.
+	 * @param int $status Status code for the target setting; generally 0 for inactive, 1 for active.
 	 */
 	private function save_target_settings( $type, $identifier, $cost, $status ) {
 		$this->glob_wpdb->update(
@@ -1291,9 +1291,9 @@ class LEADEE_Functions {
 	 * @param string $to The end date for filtering records.
 	 * @param string $order_by_column The column name by which to sort the results.
 	 * @param string $order_asc_desc The sort order ("ASC" for ascending, "DESC" for descending).
-	 * @param array  $filters An associative array of additional filter criteria.
-	 * @param int    $start The starting index for the result set, used for pagination.
-	 * @param int    $limit The maximum number of records to return, used for pagination.
+	 * @param array $filters An associative array of additional filter criteria.
+	 * @param int $start The starting index for the result set, used for pagination.
+	 * @param int $limit The maximum number of records to return, used for pagination.
 	 * @param string $search_text Text to be used for search queries within the result set.
 	 *
 	 * @return mixed The constructed SQL query string.
@@ -1349,7 +1349,7 @@ class LEADEE_Functions {
 		foreach ( $filters as $filter ) {
 			if ( in_array( $filter['key'], $allowed_columns, true ) ) {
 				$filter_sql .= $filter['key'] . ' = %s AND ';
-				$values[]    = $filter['value'];
+				$values[]   = $filter['value'];
 			}
 		}
 

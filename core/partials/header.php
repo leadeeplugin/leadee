@@ -88,8 +88,8 @@ $avatar_url = get_avatar_url(
 		<div class="popover-inner">
 			<div class="list">
 				<ul>
-					<li><button class="list-button popover-close export-button" data-type="xls"><i class="icon-excel" style="background-image: url('<?php echo esc_url( LEADEE_PLUGIN_URL . '/core/assets/image/excel.png' ); ?>')"></i><span>Excel table</span></button></li>
-					<li><button class="list-button popover-close export-button" data-type="csv"><i class="icon-csv" style="background-image: url('<?php echo esc_url( LEADEE_PLUGIN_URL . '/core/assets/image/csv.png' ); ?>')"></i><span>CSV table</span></button></li>
+					<li><button class="list-button popover-close export-button" data-type="xls"><i class="icon-excel" style="background-image: url('<?php echo esc_url( LEADEE_PLUGIN_URL . '/core/assets/image/excel.png' ); ?>')"></i><span><?php esc_html_e( 'Excel table', 'leadee' ); ?></span></button></li>
+					<li><button class="list-button popover-close export-button" data-type="csv"><i class="icon-csv" style="background-image: url('<?php echo esc_url( LEADEE_PLUGIN_URL . '/core/assets/image/csv.png' ); ?>')"></i><span><?php esc_html_e( 'CSV table', 'leadee' ); ?></span></button></li>
 				</ul>
 			</div>
 		</div>

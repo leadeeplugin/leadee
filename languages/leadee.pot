@@ -50,6 +50,15 @@ msgstr ""
 msgid "Leadee news"
 msgstr ""
 
+msgid "Work space"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "just now"
+msgstr ""
+
 #: core/pages/dashboard.php
 
 msgid "Leads statistics"
@@ -154,9 +163,6 @@ msgstr ""
 msgid "Conversion goals"
 msgstr ""
 
-msgid "How close to the target <strong>for the current month</strong>"
-msgstr ""
-
 msgid "Your goal"
 msgstr ""
 
@@ -179,6 +185,9 @@ msgid "Count"
 msgstr ""
 
 msgid "Sum"
+msgstr ""
+
+msgid "How close to the target for the current month"
 msgstr ""
 
 #: core/pages/goals-settings.php
@@ -260,4 +269,178 @@ msgid "Column settings"
 msgstr ""
 
 msgid "For leads"
+msgstr ""
+
+#: core/assets/js/pages/dashboard/dashboard.js
+
+msgid "We are waiting for leads.<br>Submit a test request<br>and you will see a nice notification here :)"
+msgstr ""
+
+#: core/assets/js/main.js
+msgid "Leadee running.<br>Possibly for a selected period of time<br>clients did not leave requests?<br>Please select a different date range."
+msgstr ""
+
+#: core/assets/js/*
+msgid "No data"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "Not"
+msgstr ""
+
+msgid "Saved!"
+msgstr ""
+
+msgid "New lead!"
+msgstr ""
+
+#: core/assets/js/pages/goals/goals.js
+msgid "conversions"
+msgstr ""
+
+msgid "Entries"
+msgstr ""
+
+msgid "Device"
+msgstr ""
+
+msgid "Reset Filter"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+#: core/assets/js/calend.js
+msgid "From"
+msgstr ""
+
+msgid "To"
+msgstr ""
+
+msgid "Today"
+msgstr ""
+
+msgid "7 days"
+msgstr ""
+
+msgid "31 days"
+msgstr ""
+
+
+#: common/for/tour
+msgid "End tour"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "Previous"
+msgstr ""
+
+msgid "Chart with Statistics"
+msgstr ""
+
+msgid "Columns are colored in 7 rainbow colors for ease of perception"
+msgstr ""
+
+
+#: core/assets/js/pages/dashboard/dashboard-tour.js
+
+msgid "The columns are colored in 7 rainbow colors for ease of perception."
+msgstr ""
+
+msgid "New Leads Widget"
+msgstr ""
+
+msgid "Here you can always see notifications about new leads received in real-time. The information is also duplicated in a pop-up window."
+msgstr ""
+
+msgid "You have reached customizable goals"
+msgstr ""
+
+msgid "What is it? - The uniqueness of our plugin. Set your own goals for the number of leads you want to receive per current month and achieve them!"
+msgstr ""
+
+msgid "Leads Sources Chart"
+msgstr ""
+
+msgid "In the \"Leads Sources\" chart, you will see which type of traffic is the most conversion-friendly on your website: search, advertising systems, social networks, and others."
+msgstr ""
+
+msgid "3 Blocks with Important Customer Information"
+msgstr ""
+
+msgid "Their screen sizes, the operating systems they use, and the pages from which they most often leave leads."
+msgstr ""
+
+#: core/assets/js/pages/goals/goals-tour.js
+msgid "Statistics Chart"
+msgstr ""
+
+msgid "The columns are colored with 7 rainbow colors for better perception"
+msgstr ""
+
+msgid "Status of Your Goal Progress"
+msgstr ""
+
+msgid "Track your progress with our fun indicator"
+msgstr ""
+
+msgid "Sum of Goals by Forms"
+msgstr ""
+
+msgid "See how much you earned from each form"
+msgstr ""
+
+#: core/assets/js/pages/goals-settings/goals-settings-tour.js
+msgid "Form Cost Settings Table"
+msgstr ""
+
+msgid "In this table, you can set the cost of leads for each form."
+msgstr ""
+
+msgid "Want to earn a lot in a month? Set a monthly goal!"
+msgstr ""
+
+msgid "This setting will help you track your monthly progress."
+msgstr ""
+
+#: core/assets/js/pages/leads-table-settings/leads-table-settings-tour.js
+msgid "Lead Table Column Management"
+msgstr ""
+
+msgid "For your convenience, you can disable or enable columns in the lead table."
+msgstr ""
+
+#: core\assets\js\jquery.dataTables.min.js
+msgid "No data available in table"
+msgstr ""
+
+msgid "Showing"
+msgstr ""
+
+msgid "entries"
+msgstr ""
+
+msgid "to"
+msgstr ""
+
+msgid "of"
+msgstr ""
+
+msgid "Loading..."
+msgstr ""
+
+msgid "Processing..."
+msgstr ""
+
+msgid "Search:"
+msgstr ""
+
+msgid "No matching records found"
 msgstr ""

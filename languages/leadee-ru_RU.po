@@ -1,0 +1,464 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Leadee\n"
+"Report-Msgid-Bugs-To: https://leadee.io/\n"
+"POT-Creation-Date: 2021-03-11 09:51+0000\n"
+"PO-Revision-Date: 2024-09-08 09:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: Русский\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.11; wp-6.6.1\n"
+"X-Domain: loco-translate"
+
+msgid "3 Blocks with Important Customer Information"
+msgstr "3 блока с важной информацией о клиентах"
+
+msgid "31 days"
+msgstr "31 день"
+
+msgid "7 days"
+msgstr "7 дней"
+
+msgid "Advertising systems"
+msgstr "Рекламные системы"
+
+msgid "All goals are summarized in quantitative and monetary terms."
+msgstr "Все цели суммируются в количественных и денежных показателях."
+
+msgid "Average count of goals"
+msgstr "Среднее количество целей"
+
+msgid "Average count of leads"
+msgstr "Среднее число заявок"
+
+msgid "Browser"
+msgstr "Браузер"
+
+msgid "Chart with Statistics"
+msgstr "График статистики"
+
+msgid "Close"
+msgstr "Закрыть"
+
+#: core/pages/leads-table-settings.php
+msgid "Column settings"
+msgstr "Настройки столбцов"
+
+msgid "Columns are colored in 7 rainbow colors for ease of perception"
+msgstr "Колонки раскрашены в 7 цветов радуги для удобства восприятия."
+
+msgid "Conversion goals"
+msgstr "Цели конверсии"
+
+#: core/assets/js/pages/goals/goals.js
+msgid "conversions"
+msgstr "конверсий"
+
+msgid "Cost"
+msgstr "Стоимость"
+
+msgid "Count"
+msgstr "Количество"
+
+msgid "CSV table"
+msgstr "Таблица CSV"
+
+msgid "Dashboard"
+msgstr "Панель управления"
+
+#: core/pages/leads.php
+msgid "Date"
+msgstr "Дата"
+
+msgid "Device"
+msgstr "Устройство"
+
+msgid "Device OS"
+msgstr "ОС устройства"
+
+msgid "Device type"
+msgstr "Тип устройства"
+
+msgid "Direct traffic"
+msgstr "Прямой трафик"
+
+#: core/partials/header.php
+msgid "Donate us"
+msgstr "Поддержать нас"
+
+#: common/for/tour
+msgid "End tour"
+msgstr "Завершить"
+
+msgid "Enter amount in $"
+msgstr "Введите сумму в $"
+
+msgid "Enter goal amount"
+msgstr "Введите сумму цели"
+
+msgid "Entries"
+msgstr "Записей"
+
+msgid "entries"
+msgstr "заявок"
+
+msgid "Excel table"
+msgstr "Таблица Excel"
+
+msgid "Export"
+msgstr "Экспорт"
+
+msgid "Facebook, Instagram, VK, etc"
+msgstr "Facebook, Instagram, VK и т.д."
+
+msgid "First visit params"
+msgstr "Параметры первого посещения"
+
+msgid "For leads"
+msgstr "Для лидов"
+
+msgid ""
+"For your convenience, you can disable or enable columns in the lead table."
+msgstr ""
+"Для вашего удобства вы можете отключить или включить столбцы в таблице лидов."
+
+msgid "Form"
+msgstr "Форма"
+
+#: core/assets/js/pages/goals-settings/goals-settings-tour.js
+msgid "Form Cost Settings Table"
+msgstr "Таблица настроек стоимости целей для форм"
+
+msgid "Form fields"
+msgstr "Поля формы"
+
+msgid "Form type"
+msgstr "Тип формы"
+
+#: core/assets/js/calend.js
+msgid "From"
+msgstr "От"
+
+msgid "From those who entered the site address"
+msgstr "От тех, кто ввел адрес сайта"
+
+msgid "Goal = useful action on the site (enter message in form, etc.)."
+msgstr "Цель = полезное действие на сайте (ввести сообщение в форму и т.д.)."
+
+msgid "Goal amount"
+msgstr "Сумма цели"
+
+msgid "Goal not set!"
+msgstr "Цель не установлена!"
+
+#: core/pages/goals-settings.php
+msgid "Goal sum setting for forms"
+msgstr "Настройка суммы цели для форм"
+
+msgid "Goals"
+msgstr "Цели"
+
+msgid "Goals of leads"
+msgstr "Ваши цели по заявкам"
+
+msgid "Goals settings"
+msgstr "Настройки целей"
+
+#: core/pages/goals.php
+msgid "Goals Statistics"
+msgstr "Статистика целей"
+
+msgid "Google Ads, FB Ads, etc"
+msgstr "Google Ads, FB Ads и т.д."
+
+msgid "Google, Bing, Yandex, etc"
+msgstr "Google, Bing, Yandex и т.д."
+
+msgid ""
+"Here you can always see notifications about new leads received in real-time. "
+"The information is also duplicated in a pop-up window."
+msgstr ""
+"Здесь вы всегда можете увидеть уведомления о новых поступлениях лидов в "
+"режиме реального времени. Информация также дублируется во всплывающем окне."
+
+msgid "How close to the target for the current month"
+msgstr "Насколько близко к цели за текущий месяц"
+
+#| msgid ""
+#| "How much do you want leads and conversions that which users will  for "
+#| "<strong>1 month</strong>?"
+msgid ""
+"How much do you want leads and conversions that which users will for 1 month?"
+msgstr ""
+"Как много вам нужно лидов и конверсий, которые пользователи сделают за 1 "
+"месяц?"
+
+msgid ""
+"In the \"Leads Sources\" chart, you will see which type of traffic is the "
+"most conversion-friendly on your website: search, advertising systems, "
+"social networks, and others."
+msgstr ""
+"На диаграмме «Источники лидов» вы увидите, какой тип трафика наиболее "
+"конверсионный на вашем сайте: поисковые, рекламные системы, социальные сети "
+"и другие."
+
+msgid "In this table, you can set the cost of leads for each form."
+msgstr "В этой таблице вы можете установить стоимость лидов для каждой формы."
+
+msgid "just now"
+msgstr "только что"
+
+msgid "Last leads"
+msgstr "Новые заявки"
+
+#: core/assets/js/pages/leads-table-settings/leads-table-settings-tour.js
+msgid "Lead Table Column Management"
+msgstr "Управление столбцами таблицы потенциальных клиентов"
+
+msgid "Leadee news"
+msgstr "Новости Leadee"
+
+#: core/assets/js/main.js
+msgid ""
+"Leadee running.<br>Possibly for a selected period of time<br>clients did not "
+"leave requests?<br>Please select a different date range."
+msgstr ""
+"Leadee работает.<br>Возможно, в течение выбранного периода времени<br>"
+"клиенты не оставляли заявки?<br>Выберите другой диапазон дат."
+
+msgid "Leads"
+msgstr "Лиды"
+
+msgid "Leads month sum"
+msgstr "Всего лидов за месяц"
+
+msgid "Leads sources"
+msgstr "Источники заявок"
+
+msgid "Leads Sources Chart"
+msgstr "График источников лидов"
+
+#: core/pages/dashboard.php
+msgid "Leads statistics"
+msgstr "Статистика по заявкам"
+
+msgid "Leads table settings"
+msgstr "Настройки таблицы "
+
+msgid "Loading..."
+msgstr "Загрузка..."
+
+msgid "New lead!"
+msgstr "Новая заявка!"
+
+msgid "New Leads Widget"
+msgstr "Виджет новых лидов"
+
+msgid "Next"
+msgstr "Далее"
+
+#: core/assets/js/*
+msgid "No data"
+msgstr "Нет данных"
+
+#: core\assets\js\jquery.dataTables.min.js
+msgid "No data available in table"
+msgstr ""
+
+msgid "No matching records found"
+msgstr "Ничего не найдено"
+
+msgid "Not"
+msgstr "Нет"
+
+msgid "of"
+msgstr "из"
+
+#| msgid "of goal achievement per month"
+msgid "of goal achievement per current month"
+msgstr "достигнутой цели"
+
+msgid "Operating systems. Top 5"
+msgstr "Операционные системы"
+
+msgid "OS clients"
+msgstr "ОС клиентов"
+
+msgid "Page"
+msgstr "Страница"
+
+msgid "Plugin settings"
+msgstr "Настройки плагина"
+
+msgid "Popular Pages"
+msgstr "Популярные страницы"
+
+#| msgid "Popular screen sizes"
+msgid "Popular screen sizes top 5"
+msgstr "Популярные размеры экранов"
+
+msgid "Previous"
+msgstr "Назад"
+
+msgid "Processing..."
+msgstr "Загрузка..."
+
+msgid "Referral traffic"
+msgstr "Трафик с рефералов"
+
+msgid "Reset Filter"
+msgstr "Сбросить фильтр"
+
+msgid "Save data"
+msgstr "Сохранить"
+
+msgid "Saved!"
+msgstr "Сохранено!"
+
+msgid "Screen"
+msgstr "Экран"
+
+msgid "Search engines"
+msgstr "Поисковые системы"
+
+msgid "Search:"
+msgstr "Поиск:"
+
+msgid "See how much you earned from each form"
+msgstr "Посмотрите, сколько вы заработали с каждой формы"
+
+msgid "Select"
+msgstr "Выберите"
+
+msgid "Set goal"
+msgstr "Установить цель"
+
+msgid "Showing"
+msgstr "Показано с"
+
+msgid "Social networks"
+msgstr "Социальные сети"
+
+msgid "Source"
+msgstr "Источник"
+
+msgid "Source type"
+msgstr "Тип источника"
+
+#: core/assets/js/pages/goals/goals-tour.js
+msgid "Statistics Chart"
+msgstr "График статистики"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Status of Your Goal Progress"
+msgstr "Статус достижения вашей цели"
+
+msgid "Sum"
+msgstr "Сумма"
+
+msgid "Sum of Goals by Forms"
+msgstr "Сумма целей по формам"
+
+msgid "Support"
+msgstr "Поддержка"
+
+msgid "Support & Faq"
+msgstr "Поддержка и FAQ"
+
+#: core/assets/js/pages/dashboard/dashboard-tour.js
+msgid "The columns are colored in 7 rainbow colors for ease of perception."
+msgstr "Колонки раскрашены в 7 цветов радуги для удобства восприятия."
+
+msgid "The columns are colored with 7 rainbow colors for better perception"
+msgstr "Колонки раскрашены в 7 цветов радуги для лучшего восприятия."
+
+msgid ""
+"The table reflects the cost of the goals that will come from contact forms"
+msgstr ""
+"Таблица отражает стоимость целей, которые будут получены из контактных форм"
+
+msgid ""
+"Their screen sizes, the operating systems they use, and the pages from which "
+"they most often leave leads."
+msgstr ""
+"Это размеры экранов, операционные системы, которые они используют, и "
+"страницы, с которых они чаще всего оставляют лиды."
+
+#| msgid "This is popular pages of clients leads."
+msgid "This is popular pages of clients leads. Top 5"
+msgstr "Здесь чаще всего оставляют заявки"
+
+msgid "This setting will help you track your monthly progress."
+msgstr "Эта настройка поможет вам отслеживать ежемесячный прогресс."
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "To"
+msgstr "До"
+
+msgid "to"
+msgstr "по"
+
+msgid "Today"
+msgstr "Сегодня"
+
+msgid "Track your progress with our fun indicator"
+msgstr "Отслеживайте свой прогресс с помощью нашего веселого индикатора"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Want to earn a lot in a month? Set a monthly goal!"
+msgstr "Хотите много заработать за месяц? Установите цель на месяц!"
+
+#: core/assets/js/pages/dashboard/dashboard.js
+msgid ""
+"We are waiting for leads.<br>Submit a test request<br>and you will see a "
+"nice notification here :)"
+msgstr ""
+"Ждем лидов.<br>Отправьте заявку<br>и вы увидите здесь красивое уведомление :)"
+
+msgid "Websites, forums, blogs, etc."
+msgstr "Веб-сайты, форумы, блоги и т.д."
+
+msgid "Week"
+msgstr "Неделя"
+
+msgid ""
+"What is it? - The uniqueness of our plugin. Set your own goals for the "
+"number of leads you want to receive per current month and achieve them!"
+msgstr ""
+"Что это такое? - Уникальность нашего плагина. Ставьте себе цели по "
+"количеству лидов, которые вы хотите получать в текущем месяце, и достигайте "
+"их!"
+
+msgid "Where do leads come from"
+msgstr "Откуда приходят заявки"
+
+#| msgid "With these screen sizes, requests are left most often"
+msgid "With these screen sizes, requests are left most often. Top 5"
+msgstr "С этих размеров заявки оставляют чаще всего"
+
+msgid "Work space"
+msgstr "Рабочая область"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "Yesterday"
+msgstr "Вчера"
+
+msgid "You have reached customizable goals"
+msgstr "Вы достигли настраиваемых целей"
+
+msgid "Your goal"
+msgstr "Ваша цель"

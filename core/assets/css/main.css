@@ -1418,7 +1418,7 @@ canvas {
   display: flex;
 }
 .leads-table-filter .item-title {
-  padding-right: 15px;
+  padding-right: 6px;
 }
 .leads-table-filter > div {
   padding-left: 20px;

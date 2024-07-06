@@ -32,7 +32,7 @@ $functions = new LEADEE_Functions();
 				<div class="target-small-info">
 					<div class="target-small-child">
 						<i class="leadee-icon icon-target-green"></i>
-						<span class=""><?php esc_html_e( 'Your goal:', 'leadee' ); ?><span id="month-target">0</span></span>
+						<span class=""><?php esc_html_e( 'Your goal', 'leadee' ); ?>:<span id="month-target">0</span></span>
 					</div>
 					<div class="target-small-child">
 						<i class="leadee-icon icon-info"></i>

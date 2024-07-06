@@ -11,7 +11,7 @@
             data: {'type': 'leads-table-columns', 'option': option, 'value': value},
             dataType: 'JSON',
             success: function () {
-                openAlert("Saved!");
+                openAlert(localDataLeadsTableSettings.savedText);
             }
         });
 
