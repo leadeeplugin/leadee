@@ -71,5 +71,5 @@ If you discover any errors, please report them to support@leadee.io.
 = 1.0.3 - 2024-05-21 =
 * Fix: fix table and base
 
-= 1.0.4 - 2024-09-08 =
+= 1.0.4 - 2024-09-09 =
 * Translation and tested on wp 6.6
